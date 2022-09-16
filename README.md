@@ -137,7 +137,7 @@ Force push. usually used when using `git commit --amend` after already pushing t
 git push --force-with-lease
 ```
 ### pull
-_Pull from remote directory to update local directory_ (under the hood, it's a `fetch` and a `merge`/`rebase` (TODO: add link to section) (see below)). Note: there may be conflicts you have to resolve.
+_Pull from remote directory to update local directory_ (under the hood, it's a [`fetch`](#fetch) and a [`merge`](#merge)/[`rebase`](#rebase). Note: there may be conflicts you have to resolve.
 ```
 git pull
 ```
@@ -185,7 +185,7 @@ git rebase master topic
 ```
 - NOTE: `git rebase master topic` is a short-hand of `git checkout topic` followed by `git rebase master`. When `rebase` exits, topic will remain the checked-out branch. (from git-scm.com)
 
-For more information about rewriting history, see [rewriting history].
+For more information about rewriting history, see [rewriting history](#rewriting-history).
 
 TODO: a cool diagram drawn by some rly cool ppl
 
