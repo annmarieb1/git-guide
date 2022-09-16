@@ -1,5 +1,10 @@
 # Just Git Things: A Git Guide By Me
 
+## What is Git? and Git vs. GitHub
+Sorry, this guide is not an intro to git. It's a guide.
+- https://www.geeksforgeeks.org/difference-between-git-and-github/
+- https://devmountain.com/blog/git-vs-github-whats-the-difference/
+
 ## Git Commands
 ### config
 _Configure options for repository or globally_.
