@@ -409,7 +409,7 @@ If the submodules have submodules (nested submodules):
 ```
 git submodule update --init --recursive
 ```
-#### Pull in changes from the submodule remote repo_.
+#### Pull in changes from the submodule remote repo.
 ```
 git submodule update --remote
 ```
@@ -447,12 +447,13 @@ Videos:
 - [Git/GitHub for beginners](https://youtu.be/3fUbBnN_H2c) (LONG video)
 - [Git for beginners](https://youtu.be/8JJ101D3knE) (1 hour video)
 
-## References that gave me info for this
+## References that gave me info for this (in addition to links scattered throughout)
 - My own knowledge
 - Git docs
 - My friends
 - Offensive Security course at Tufts (https://www.cs.tufts.edu/t/courses/description/spring2022/CS/151-01)
 - Fundamentals of Git - MITRE MTN Thursday Training Series
+- Alex Z.
 - Sarah O.
 - Julia A.
 - Matt G.
