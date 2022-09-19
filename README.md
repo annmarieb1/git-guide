@@ -458,7 +458,7 @@ Videos:
 - My friends
 - Offensive Security course at Tufts (https://www.cs.tufts.edu/t/courses/description/spring2022/CS/151-01)
 - Fundamentals of Git - MITRE MTN Thursday Training Series
-- Alex Z.
+- [Alex Z.](https://github.com/alexz12948)
 - Sarah O.
 - Julia A.
 - Matt G.
