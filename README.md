@@ -48,8 +48,19 @@ git branch
 
 #### Delete a branch local or remote
 
-Local: `git branch -d [local branch]`\
-Remote: `git push origin --delete [remote branch]`
+Local:
+```
+git branch -d [local branch]
+```
+or if you want to force delete it (this will delete any changes you've made to files on that branch):
+```
+git branch -D [local branch]
+```
+
+Remote:
+```
+git push origin --delete [remote branch]
+```
 ### checkout, switch, restore
 - https://git-scm.com/docs/git-checkout
 - https://git-scm.com/docs/git-switch
@@ -137,10 +148,19 @@ git push
 ```
 - https://git-scm.com/docs/git-push
 
-Force push. usually used when using `git commit --amend` after already pushing to remote or when rebasing.
+If you're pushing from a newly created local branch,
+`git push --set-upstream origin [intended branch name]` or
+`git push -u origin [intended branch name]`
+
+#### Force push
+used when you've rewritten git history
 ```
 git push --force-with-lease
 ```
+According to the docs,
+> `--force-with-lease` will protect all remote refs that are going to be updated by requiring their current value to be the same as the remote-tracking branch we have for them. If somebody else built on top of your original history while you are rebasing, the tip of the branch at the remote may advance with their commit, and blindly pushing with `--force` will lose their work.
+
+It's basically a safer way to force push than using just `--force`.
 ### pull
 _Pull from remote directory to update local directory_ (under the hood, it's a [`fetch`](#fetch) and a [`merge`](#merge)/[`rebase`](#rebase). Note: there may be conflicts you have to resolve.
 ```
