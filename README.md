@@ -310,7 +310,7 @@ git log
 - https://git-scm.com/docs/git-log
 
 `git log --oneline` shows all commits in one line each
-`git log `--pretty=oneline` shows all commits in one line but pretty
+`git log --pretty=oneline` shows all commits in one line but pretty
 ### show
 Show changes in a commit.
 ```
