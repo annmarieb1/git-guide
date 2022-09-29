@@ -444,7 +444,16 @@ git pull
 git submodule update --init --recursive
 ```
 All submodules can be found in `.gitmodules`.
-
+#### Remove Submodule
+- https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
+```
+git rm [path to submodule]
+```
+After doing this, the submodule will still be in `.git/modules` directory and in the git config `.git/config`. To remove it from those:
+```
+rm -rf .git/modules/[path to submodule]
+git config --remove-section submodule.[path to submodule]
+```
 ### Track an existing remote branch to an existing local branch
 while on local branch of same name: `git branch -u origin/[remote branch name]`
 if commits are ready to push: `git push -u origin [remote branch name]`
