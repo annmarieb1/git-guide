@@ -302,6 +302,13 @@ Show changes made to a renamed file compared to the old file name HEAD refers to
 git diff HEAD:[old_file_name] [new file name]
 ```
 - https://stackoverflow.com/questions/5730460/how-to-do-a-git-diff-on-moved-renamed-file
+
+Compare two branches
+```
+git diff [branch1]..[branch2]
+```
+- https://devconnected.com/how-to-compare-two-git-branches/
+
 ### log
 _Show log of commits_.
 ```
