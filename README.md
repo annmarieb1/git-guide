@@ -369,12 +369,34 @@ _Drop/delete stash entry `n`_.
 ```
 git stash drop stash@{n}
 ```
-### cherry-picking (section in progress)
+### cherry-picking
 _For when you mess up a branch and need to pick and choose commits to keep changes from_.
 - https://git-scm.com/docs/git-cherry-pick
-- Great tutorial: https://www.atlassian.com/git/tutorials/cherry-pick
+- Great tutorial!!: https://www.atlassian.com/git/tutorials/cherry-pick
+```
+git cherry-pick [commit hash]
+```
+You can find the git hash by running `git log`. You don't need the full hash you can take the first 8(?).
 
-I never do this without looking it up first
+You can also cherry pick _multiple commits_: https://stackoverflow.com/questions/1670970/how-to-cherry-pick-multiple-commits
+To cherry-pick all the commits from commit A to commit B (where A is older than B)
+`git cherry-pick A^..B` includes commit A
+`git cherry-pick A..B` excludes commit A
+- A should be older than B, or A should be from another branch, or else it will fail
+- On Windows, it should be A^^..B as the caret needs to be escaped, or it should be "A^..B" (double quotes).
+- In zsh shell, it should be 'A^..B' (single quotes) as the caret is a special character.
+
+Cherry pick the changes in the commit(s) but move the contents into the working tree and the index. Super useful!
+```
+git cherry-pick --no-commit [commit hash]
+```
+or use `-n`
+
+Edit commit message before commiting
+```
+git cherry-pick -edit [commit hash]
+```
+or `-e`
 
 ### tagging
 - https://git-scm.com/book/en/v2/Git-Basics-Tagging
