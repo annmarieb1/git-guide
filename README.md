@@ -379,6 +379,7 @@ git cherry-pick [commit hash]
 You can find the git hash by running `git log`. You don't need the full hash you can take the first 8(?).
 
 You can also cherry pick _multiple commits_: https://stackoverflow.com/questions/1670970/how-to-cherry-pick-multiple-commits
+
 To cherry-pick all the commits from commit A to commit B (where A is older than B)
 `git cherry-pick A^..B` includes commit A
 `git cherry-pick A..B` excludes commit A
